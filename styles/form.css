@@ -4,15 +4,26 @@ body{
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #062039;
+  margin: 0;
+  min-height: 100%;
+}
+.center-content{
+  display: flex;
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  resize: vertical;
+  width: 100%;
+  padding-bottom: 40px;
 }
 header{
-  display: inline-block;
   width: 30%;
-  height: 100%;
-  background-color: rgba(197, 184, 184, 0.247);
-  border-radius: 15px;
+  background-color: rgba(163, 193, 238, 0.35);
+  border-radius: 15px 0;
   padding: 20px 0;
-  margin: auto;
 }
 p, h1{
   text-align: center;
@@ -22,8 +33,8 @@ h1, h4{
   color: silver;
 }
 .form{
-  display: inline-block;
-  width: 70%;
+  width: 65%;
+  background-color: rgba(163, 193, 238, 0.35);
 }
 
 
@@ -34,6 +45,7 @@ h1, h4{
 .personal-info input, select{
   margin-bottom: 12px;
   margin-top: 3px;
+  margin-left: 5px;
   width: 80%;
 }
 
@@ -96,4 +108,37 @@ h1, h4{
 .float-container::before, .float-container::after{
   content: "";
   display: table;
+}
+input[type="submit"]{
+  width: 100%;
+  margin-top: 20px;
+}
+@media (max-width: 760px) {
+  .ph-addr{
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .ph-addr input{
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 12px;
+  }
+  .center-content{
+    display: block;
+  }
+  header{
+    display: block;
+    padding:20px auto;
+    width: 100%;
+    border-radius: 0;
+  }
+  .form{
+    display: block;
+    width: 100%;
+  }
+  .referrences{
+    margin: 2px;
+    padding: 0;
+  }
 }
