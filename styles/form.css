@@ -70,7 +70,15 @@ h1, h4{
 
 
 .additional{
-  background-color: silver;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.additional textarea{
+  width: 100%;
+}
+.additional div{
+  width: 80%;
 }
 .referrences{
   position: absolute;
