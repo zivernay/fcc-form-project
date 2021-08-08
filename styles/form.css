@@ -31,7 +31,6 @@ h1, h4{
   width: 48%;
   float: left;
 }
-
 .personal-info input, select{
   margin-bottom: 12px;
   margin-top: 3px;
@@ -51,7 +50,7 @@ h1, h4{
   align-items: flex-end;
 }
 .checks div{
-  width: 60%;
+  width: fit-content;
   margin: 5px 20px;
 }
 .checks label{
@@ -59,7 +58,17 @@ h1, h4{
 }
 .checks input{
   float: right;
+  margin: 0 10px;
 }
+.ph-addr{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+
 .additional{
   background-color: silver;
 }

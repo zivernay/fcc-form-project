@@ -66,20 +66,22 @@
               <input type="checkbox" id="unemployed" name="unemployed" value="unemployed"><br>
               </div>
             </div>
-            <div>
-              <h4>Address</h4>
-              <label for="area-code">Area code</label><br>
-              <input type="number" name="area-code" id="area-code" value="area-code" minlength=3
-              maxlength="8" size="4">
-            </div>
-            <div>
-              <label for="city">City</label><br>
-              <input type="text" name="city" id="city" list="cities" required>
-              <datalist id="cities">
-                <option value="Rostov">
-                <option value="Harare">
-                <option value="Kadoma">
-              </datalist>
+            <h4>Address</h4>
+            <div class="float-container ph-addr">
+              <div>
+                <label for="area-code">Area code</label><br>
+                <input type="number" name="area-code" id="area-code" size="5" value="area-code" minlength=3
+                maxlength="8">
+              </div>
+              <div>
+                <label for="city">City</label><br>
+                <input type="text" name="city" id="city" list="cities" size="15" required>
+                <datalist id="cities">
+                  <option value="Rostov">
+                  <option value="Harare">
+                  <option value="Kadoma">
+                </datalist>
+              </div>
             </div>
           </section>
         </div>
