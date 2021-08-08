@@ -1,7 +1,51 @@
 body{
-  background: grey
-   url("..\\images\\isabel-galvez-i54owgDjXeY-unsplash.jpg");
+  background-image: url("../images/isabel-galvez-i54owgDjXeY-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #062039;
 }
 header{
-  background-color: blue;
+  display: inline-block;
+  width: 30%;
+
+  background-color: grey;
+}
+.form{
+  display: inline-block;
+  width: 70%;;
+}
+.personal-info{
+  width: 48%;
+  float: left;
+
+  background-color: gray;
+}
+.employment{
+  width: 50%;
+  float: right;
+  padding-left: 5px;
+  border-left: 1px solid silver;
+
+  background-color: gray;
+}
+.additional{
+  background-color: silver;
+}
+.referrences{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.5em;
+}
+.float-container{
+  clear: both;
+  *zoom:1;
+}
+.float-container::after{
+  clear: both;
+}
+.float-container::before, .float-container::after{
+  content: "";
+  display: table;
 }
