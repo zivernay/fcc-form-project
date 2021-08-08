@@ -8,26 +8,57 @@ body{
 header{
   display: inline-block;
   width: 30%;
-
-  background-color: grey;
+  height: 100%;
+  background-color: rgba(197, 184, 184, 0.247);
+  border-radius: 15px;
+  padding: 20px 0;
+  margin: auto;
+}
+p, h1{
+  text-align: center;
+  padding: 0 5px;
+}
+h1, h4{
+  color: silver;
 }
 .form{
   display: inline-block;
-  width: 70%;;
+  width: 70%;
 }
+
+
 .personal-info{
   width: 48%;
   float: left;
-
-  background-color: gray;
 }
+
+.personal-info input, select{
+  margin-bottom: 12px;
+  margin-top: 3px;
+  width: 80%;
+}
+
+
 .employment{
   width: 50%;
   float: right;
   padding-left: 5px;
-  border-left: 1px solid silver;
-
-  background-color: gray;
+  border-left: 1px solid rgba(192, 192, 192, 0.37);
+}
+.checks{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.checks div{
+  width: 60%;
+  margin: 5px 20px;
+}
+.checks label{
+  float: left;
+}
+.checks input{
+  float: right;
 }
 .additional{
   background-color: silver;

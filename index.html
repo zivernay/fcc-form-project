@@ -20,23 +20,23 @@
           <section class="personal-info">
             <h4>Personal infomation</h4>
             <div>
-                <label for="name" id="name-label">Name</label>
+                <label for="name" id="name-label">Name</label><br>
                 <input type="text" name="name" id="name" placeholder="Name">
             </div>
             <div>
-                <label for="email" id="email-label">Email</label>
+                <label for="email" id="email-label">Email</label><br>
                 <input type="email" name="email" id="email" maxlength="50"
                 pattern="[a-zA-Z0-9.]+@[a-z]{2,7}\.[a-z]{2,4}"
                 placeholder="you@email.com">
             </div>
             <div>
-              <label for="number" id="number-label">Phone</label>
+              <label for="number" id="number-label">Phone</label><br>
               <input type="tel" name="phone-number" id="number" required
                pattern="\d{5,12}" maxlength="12" minlength="5"
                placeholder="123456789">
             </div>
             <div>
-              <label for="gender" id="gender-label">gender</label>
+              <label for="gender" id="gender-label">Gender</label><br>
               <select name="gender" id="dropdown">
                 <option disabled selected value="">select your gender</option>
                 <option value="male">Male</option>
@@ -48,24 +48,32 @@
 
           <section class="employment">
             <h4>Employement status</h4>
-            <div>
-              <label for="full-time">Full time</label>
-              <input type="checkbox" name="full-time" id="full-time" value="full-time">
-              <label for="part-time">Part time</label>
-              <input type="checkbox" id="part-time" name="part-time" value="part-time">
-              <label for="free-lancing">Free lancing</label>
-              <input type="checkbox" name="free-lancing" id="free-lancing" value="free-lancing">
-              <label for="unemployed">Unemployed</label>
-              <input type="checkbox" id="unemployed" name="unemployed" value="unemployed">
+            <div class="checks">
+              <div>
+                <label for="full-time">Full time</label>
+              <input type="checkbox" name="full-time" id="full-time" value="full-time"><br>
+              </div>
+              <div>
+                <label for="part-time">Part time</label>
+              <input type="checkbox" id="part-time" name="part-time" value="part-time"><br>
+              </div>
+              <div>
+                <label for="free-lancing">Free lancing</label>
+              <input type="checkbox" name="free-lancing" id="free-lancing" value="free-lancing"><br>
+              </div>
+              <div>
+                <label for="unemployed">Unemployed</label>
+              <input type="checkbox" id="unemployed" name="unemployed" value="unemployed"><br>
+              </div>
             </div>
             <div>
               <h4>Address</h4>
-              <label for="area-code">Area code</label>
+              <label for="area-code">Area code</label><br>
               <input type="number" name="area-code" id="area-code" value="area-code" minlength=3
               maxlength="8" size="4">
             </div>
             <div>
-              <label for="city">City</label>
+              <label for="city">City</label><br>
               <input type="text" name="city" id="city" list="cities" required>
               <datalist id="cities">
                 <option value="Rostov">
@@ -77,14 +85,14 @@
         </div>
           <section class="additional">
             <div>
-              <label for="additional-info">Additional Information</label>
+              <label for="additional-info">Additional Information</label><br>
               <textarea name="additional-info" rows="4"></textarea>
             </div>
             <div>
               <small>Choice on Terms and Condition:</small>
-                <label for="yes">Agree</label>
+                <label for="yes">Agree</label><br>
                   <input type="radio" name="choice" id="yes" value="Yes">
-                <label for="no">Disagree</label>
+                <label for="no">Disagree</label><br>
                   <input type="radio" name="choice" id="no" value="No">
             </div>
           </section>
